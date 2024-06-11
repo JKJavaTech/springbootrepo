@@ -1,4 +1,4 @@
- package comthread.demo;
+  package comthread.demo;
 
 class Account{
 	
@@ -15,14 +15,14 @@ class Account{
 		}
 		amount=this.amount-withdrawamount;
 		System.out.println("After Withdraw The Amount Was >>>>> "+amount);
-	}
+	}//withdraw
 	
 	public synchronized  void deposit(double deposit) {
 		System.out.println("Deposit the Amount Please make sufficient balence");
 		amount=amount+deposit;
 		System.out.println("After Deposit The Amount Was "+amount);
 		notify();
-	}
+	}//deposit
 	
 }
 public class InterThreadCommu {
